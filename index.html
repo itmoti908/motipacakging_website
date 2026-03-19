@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Moti Packaging Industries</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+    @keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes floatZoom {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+.animate-float {
+  animation: floatZoom 5s ease-in-out infinite;
+}
+.logo-slider{
+overflow:hidden;
+position:relative;
+width:100%;
+}
+
+.logo-track{
+display:flex;
+width:max-content;
+animation: scrollLogos 18s linear infinite;
+}
+
+.logo-track img{
+height:140px;
+width:auto;
+filter: grayscale(100%);
+opacity:0.9;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes scrollLogos {
+
+0%{
+transform: translateX(0);
+}
+
+100%{
+transform: translateX(-50%);
+}
+
+}
+
+.feature-card{
+transition: all .35s ease;
+cursor:pointer;
+}
+
+.feature-card:hover{
+transform: translateY(-8px) scale(1.05);
+}
+
+.feature-desc{
+display:none;
+font-size:14px;
+color:#555;
+margin-top:10px;
+}
+
+.feature-card.active .feature-desc{
+display:block;
+}
+
+
+.font-spartan{
+font-family: 'League Spartan', sans-serif;
+}
+
+footer a:hover{
+color:#000;
+}
+
+
+</style>
+
+<script>
+
+function toggleFeature(el){
+
+const text = el.querySelector(".feature-desc");
+
+text.classList.toggle("hidden");
+
+}
+
+</script>
+
+<body class="bg-gray-950 text-white font-sans">
+
+<!-- TOP HEADER -->
+
+<!-- TOP HEADER -->
+<div class="bg-[#041425] text-gray-300 text-sm">
+  <div class="max-w-7xl mx-auto flex justify-end gap-8 px-6 py-2">
+    <a href="#" class="hover:text-white">Explore Solutions</a>
+    <a href="#" class="hover:text-white">Careers</a>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="bg-[#041425] text-white border-t border-gray-700">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+<div class="flex items-center gap-3">
+<img src="./assests/logo.png" class="h-12">
+<span class="text-lg font-semibold tracking-wide">
+Moti Packaging Industries Pvt Ltd.
+</span>
+</div>
+
+<nav class="flex gap-10 text-[16px]">
+<a href="#" class="hover:text-[#b3bd98]">Home</a>
+<a href="#" class="hover:text-[#b3bd98]">About</a>
+<a href="#" class="hover:text-[#b3bd98]">Careers</a>
+<a href="#" class="hover:text-[#b3bd98]">Case Studies</a>
+<a href="#" class="hover:text-[#b3bd98]">Contact Us</a>
+</nav>
+
+</div>
+</header>
+
+<!-- HERO SECTION (ONLY IMAGE + BUTTONS) -->
+
+<section class="relative bg-[#aeb493] h-[490px] overflow-hidden pb-0 mb-0">
+
+<img src="./assests/image copy 8.png"
+class="absolute right-0 top-[-50px] h-[550px] object-cover w-[70%] md:w-[100%]">
+<!-- overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent"></div>
+
+<div class="relative max-w-4xl mx-auto px-6 h-full flex items-center pt-12">
+
+<div class="max-w-xl -mt-15">
+
+<h1 class="font-spartan text-5xl md:text-6xl font-bold text-white leading-tight animate-fadeUp">
+Sustainable <br>
+Durable 
+Desirable
+</h1>
+
+<p class="text-lg text-gray-200 mb-8">
+Eco-Friendly Paper Can Packaging Designed for Modern Brands.
+</p>
+
+<div class="flex gap-4">
+
+<button class="bg-black text-white px-6 py-3 rounded-md">
+Request a Quote
+</button>
+
+<button class="border border-white text-white px-6 py-3 rounded-md">
+Explore Products
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="relative py-20 bg-cover bg-center"
+style="background-image: url('/assests/image\ copy\ 9.png');">
+
+<div class="absolute inset-0 bg-[#061a2e]/80"></div>
+
+<div class="relative max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-semibold text-white mb-6">
+Solutions Designed For Modern Brands
+</h2>
+
+<p class="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
+Discover innovative paper can solutions developed by Moti Packaging Industries for modern products. Our containers combine strong structure, elegant design, and eco-conscious materials to help brands deliver a refined product experience while ensuring safe storage and transportation.
+</p>
+
+<div class="grid md:grid-cols-3 gap-8 mt-10 text-gray-300">
+
+<div>
+<h3 class="text-lg font-semibold text-white mb-2">Eco-Conscious</h3>
+<p class="text-sm">Crafted using environmentally responsible materials.</p>
+</div>
+
+<div>
+<h3 class="text-lg font-semibold text-white mb-2">Strong Protection</h3>
+<p class="text-sm">Reliable structure that protects products during storage and transit.</p>
+</div>
+
+<div>
+<h3 class="text-lg font-semibold text-white mb-2">Brand-Ready Design</h3>
+<p class="text-sm">Custom shapes, finishes, and printing for standout shelf presence.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="bg-[#041425] py-20">
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-semibold text-white mb-12">
+Who We Serve
+</h2>
+
+<div class="grid md:grid-cols-4 gap-8">
+
+<!-- Food & Snacks -->
+<a href="/food-packaging" 
+class="relative rounded-xl overflow-hidden group">
+
+<div class="absolute inset-0 bg-cover bg-center"
+style="background-image:url('/assests/image\ copy\ 10.png');"></div>
+
+<div class="absolute inset-0 bg-[#0b2a45]/85 group-hover:bg-[#0b2a45]/70 transition"></div>
+
+<div class="relative p-8">
+<h3 class="text-white text-xl font-semibold mb-3">
+Food & Snacks
+</h3>
+
+<p class="text-gray-300 text-sm leading-relaxed">
+Ideal for dry food products such as nuts, coffee, snacks, makhana, spices, and specialty foods. Designed to maintain freshness while creating an attractive shelf presence for modern food brands.
+</p>
+</div>
+
+</a>
+
+
+<!-- Cosmetics -->
+<a href="/cosmetic-packaging"
+class="relative rounded-xl overflow-hidden group">
+
+<div class="absolute inset-0 bg-cover bg-center"
+style="background-image:url('/assests/image\ copy\ 11.png');"></div>
+
+<div class="absolute inset-0 bg-[#0b2a45]/85 group-hover:bg-[#0b2a45]/70 transition"></div>
+
+<div class="relative p-8">
+<h3 class="text-white text-xl font-semibold mb-3">
+Cosmetics
+</h3>
+
+<p class="text-gray-300 text-sm leading-relaxed">
+Perfect for skincare, beauty, fragrance, and personal care brands. Elegant packaging helps products stand out while reflecting quality and brand identity.
+</p>
+</div>
+
+</a>
+
+
+<!-- Health & Wellness -->
+<a href="/health-wellness"
+class="relative rounded-xl overflow-hidden group">
+
+<div class="absolute inset-0 bg-cover bg-center"
+style="background-image:url('/assests/image\ copy\ 12.png');"></div>
+
+<div class="absolute inset-0 bg-[#0b2a45]/85 group-hover:bg-[#0b2a45]/70 transition"></div>
+
+<div class="relative p-8">
+<h3 class="text-white text-xl font-semibold mb-3">
+Health & Wellness
+</h3>
+
+<p class="text-gray-300 text-sm leading-relaxed">
+Suitable for supplements, herbal products, protein powders, and natural wellness goods. Built to protect product quality and support health-focused brands.
+</p>
+</div>
+
+</a>
+
+
+<!-- Industrial -->
+<a href="/industrial-packaging"
+class="relative rounded-xl overflow-hidden group">
+
+<div class="absolute inset-0 bg-cover bg-center"
+style="background-image:url('/assests/image\ copy\ 13.png');"></div>
+
+<div class="absolute inset-0 bg-[#0b2a45]/85 group-hover:bg-[#0b2a45]/70 transition"></div>
+
+<div class="relative p-8">
+<h3 class="text-white text-xl font-semibold mb-3">
+Industrial and Defence Products
+</h3>
+
+<p class="text-gray-300 text-sm leading-relaxed">
+Designed for specialty and industrial applications including tools, components, kits, and mechanical products requiring safe storage and organized presentation.
+</p>
+</div>
+
+</a>
+
+
+</div>
+</div>
+</section>
+
+<section class=" bg-gradient-to-b from-[#041425] to-[#06243a] py-20">
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-4xl font-semibold text-white text-center mb-16">
+Why Choose Paper Can Packaging
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- Eco Friendly -->
+<div class="bg-[#0b2a45] p-8 rounded-xl text-center hover:scale-105 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+d="M5 21c6 0 11-5 11-11V3c-6 0-11 5-11 11v7z"/>
+</svg>
+
+<h3 class="text-white text-lg font-semibold mb-2">
+Eco-Friendly Materials
+</h3>
+
+<p class="text-gray-400 text-sm">
+Paper-based materials help reduce environmental impact while maintaining strong packaging performance.
+</p>
+
+</div>
+
+
+<!-- Strong Structure -->
+<div class="bg-[#0b2a45] p-8 rounded-xl text-center hover:scale-105 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+d="M3 7l9-4 9 4-9 4-9-4zM3 17l9 4 9-4M3 12l9 4 9-4"/>
+</svg>
+
+<h3 class="text-white text-lg font-semibold mb-2">
+Strong Structure
+</h3>
+
+<p class="text-gray-400 text-sm">
+Rigid cylindrical construction provides reliable strength for safe storage and transportation.
+</p>
+
+</div>
+
+
+<!-- Product Protection -->
+<div class="bg-[#0b2a45] p-8 rounded-xl text-center hover:scale-105 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto mb-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"/>
+</svg>
+
+<h3 class="text-white text-lg font-semibold mb-2">
+Product Protection
+</h3>
+
+<p class="text-gray-400 text-sm">
+Keeps products safe during storage, handling, and transportation.
+</p>
+
+</div>
+
+
+<!-- Customization -->
+<div class="bg-[#0b2a45] p-8 rounded-xl text-center hover:scale-105 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-purple-400" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M19.14,12.94a7.07,7.07,0,0,0,.05-.94,7.07,7.07,0,0,0-.05-.94l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.6-.22l-2.49,1a6.93,6.93,0,0,0-1.63-.94l-.38-2.65A.5.5,0,0,0,13.77,3H10.23a.5.5,0,0,0-.49.42L9.36,6.07a6.93,6.93,0,0,0-1.63.94l-2.49-1a.5.5,0,0,0-.6.22l-2,3.46a.5.5,0,0,0,.12.64L4.86,11.06a7.07,7.07,0,0,0-.05.94,7.07,7.07,0,0,0,.05.94L2.75,14.59a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.6.22l2.49-1a6.93,6.93,0,0,0,1.63.94l.38,2.65a.5.5,0,0,0,.49.42h3.54a.5.5,0,0,0,.49-.42l.38-2.65a6.93,6.93,0,0,0,1.63-.94l2.49,1a.5.5,0,0,0,.6-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
+</svg>
+
+<h3 class="text-white text-lg font-semibold mb-2">
+Customization
+</h3>
+
+<p class="text-gray-400 text-sm">
+Flexible size, finish, and design options allow brands to create packaging that matches their identity.
+</p>
+
+</div>
+
+
+<!-- Freshness -->
+<div class="bg-[#0b2a45] p-8 rounded-xl text-center hover:scale-105 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-green-400" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 2C9 2 7 4 7 7c0 4 5 8 5 8s5-4 5-8c0-3-2-5-5-5zm-7 14c0 2 2 4 4 4h6c3 0 5-2 5-4H5z"/>
+</svg>
+
+<h3 class="text-white text-lg font-semibold mb-2">
+Freshness Preservation
+</h3>
+
+<p class="text-gray-400 text-sm">
+Special material layers help maintain product freshness and protect product quality.
+</p>
+
+</div>
+
+
+<!-- Recyclable -->
+<div class="bg-[#0b2a45] p-8 rounded-xl text-center hover:scale-105 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+class="w-12 h-12 mx-auto mb-4 text-green-500" 
+viewBox="0 0 24 24" 
+fill="currentColor">
+
+<path d="M12 2l2.1 3.6h-2.2c-2.7 0-4.9 1.5-6.1 3.8l-1.8-1C6 4.6 8.8 2 12 2zm7.5 4.3c1.6 2.7 1.6 6 0 8.7l1.8 1c2-3.5 2-7.8 0-11.3l-1.8 1.6zM4.5 17.7l1.8-1c1.2 2.3 3.4 3.8 6.1 3.8h2.2L12 22c-3.2 0-6-2.6-7.5-4.3z"/>
+
+</svg>
+
+<h3 class="text-white text-lg font-semibold mb-2">
+Recyclable Materials
+</h3>
+
+<p class="text-gray-400 text-sm">
+Paper-based construction supports environmentally responsible and recyclable packaging solutions.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+<section class="bg-gradient-to-b from-[#041425] to-[#06243a] py-20 overflow-hidden">
+
+<div class="max-w-7xl mx-auto px-6 relative">
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+
+<!-- LEFT CONTENT -->
+<div>
+
+<h2 class="text-4xl font-semibold text-white mb-12">
+Are You Facing Packaging Challenges?
+</h2>
+
+<div class="space-y-4">
+
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:translate-x-2 transition duration-300">
+<span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
+<p class="text-gray-300">Your product packaging does not look premium ?</p>
+</div>
+
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:translate-x-2 transition duration-300">
+<span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
+<p class="text-gray-300">Packaging gets damaged during transportation ?</p>
+</div>
+
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:translate-x-2 transition duration-300">
+<span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
+<p class="text-gray-300">Difficulty finding eco-conscious packaging options ?</p>
+</div>
+
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:translate-x-2 transition duration-300">
+<span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
+<p class="text-gray-300">Your supplier cannot scale production ?</p>
+</div>
+
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:translate-x-2 transition duration-300">
+<span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
+<p class="text-gray-300">Limited flexibility for branding and design ?</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="relative flex justify-center md:justify-end">
+
+  <div class="relative inline-block">
+
+    <!-- IMAGE -->
+    <img 
+      src="/assests/image copy 14.png"
+      alt="Thinking customer"
+      class="w-[420px] md:w-[500px] object-contain animate-float 
+             relative top-[70px] md:top-[90px]">
+
+    <!-- FADE ONLY ON IMAGE -->
+    <!-- <div class="absolute inset-0 flex items-center justify-center">
+  <div class="w-full h-full bg-gradient-to-l 
+              from-transparent via-[#041425]/50 to-[#041425] rounded-xl">
+  </div>
+</div> -->
+
+</div>
+</section>
+<section class="bg-gradient-to-b from-[#041425] to-[#06243a] py-24 relative overflow-hidden">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- TITLE -->
+<div class="text-center mb-16">
+  <h2 class="text-4xl font-semibold text-white mb-4">
+    Our Solution
+  </h2>
+
+  <p class="text-gray-300 max-w-3xl mx-auto">
+    We provide high-performance paper can solutions that help brands improve product presentation, ensure safety, and scale efficiently with reliable manufacturing and customization.
+  </p>
+</div>
+
+<!-- MAIN GRID -->
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- LEFT (KEY SOLUTION POINTS) -->
+  <div class="bg-[#0b2a45] p-8 rounded-xl">
+
+    <h3 class="text-xl text-white font-semibold mb-6">
+      What We Deliver
+    </h3>
+
+    <ul class="space-y-4 text-gray-300 text-sm">
+
+      <li>• Strong cylindrical structure for safe storage and transport</li>
+      <li>• High-quality materials that protect product integrity</li>
+      <li>• Flexible sizes and finishes for different product types</li>
+      <li>• Consistent manufacturing for large-scale production</li>
+      <li>• Reliable supply with reduced delays</li>
+
+    </ul>
+
+  </div>
+
+  <!-- RIGHT (BUSINESS IMPACT) -->
+  <div class="bg-[#0b2a45] p-8 rounded-xl">
+
+    <h3 class="text-xl text-white font-semibold mb-6">
+      Business Benefits
+    </h3>
+
+    <ul class="space-y-4 text-gray-300 text-sm">
+
+      <li>• Improve product presentation and shelf appeal</li>
+      <li>• Build strong brand identity through customization</li>
+      <li>• Maintain product freshness and quality</li>
+      <li>• Reduce damage during shipping and handling</li>
+      <li>• Support eco-conscious brand positioning</li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- BOTTOM CARDS -->
+<div class="grid md:grid-cols-3 gap-8 mt-12">
+
+  <div class="bg-[#0b2a45] p-6 rounded-xl hover:scale-105 transition">
+    <h4 class="text-white font-semibold mb-2">Reliable Production</h4>
+    <p class="text-gray-400 text-sm">
+      Scalable manufacturing ensures consistent output without delays.
+    </p>
+  </div>
+
+  <div class="bg-[#0b2a45] p-6 rounded-xl hover:scale-105 transition">
+    <h4 class="text-white font-semibold mb-2">Design Flexibility</h4>
+    <p class="text-gray-400 text-sm">
+      Multiple sizes, finishes, and branding options tailored to your needs.
+    </p>
+  </div>
+
+  <div class="bg-[#0b2a45] p-6 rounded-xl hover:scale-105 transition">
+    <h4 class="text-white font-semibold mb-2">Quality Assurance</h4>
+    <p class="text-gray-400 text-sm">
+      Strict quality control ensures durability and consistency.
+    </p>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="absolute right-0 top-0 h-full w-1/2 opacity-10">
+  <img src="/assests/image copy 15.png" class="w-full h-full object-cover">
+</div>
+</section>
+<div class="h-px bg-white/10 max-w-5xl mx-auto"></div>
+
+<section class="bg-[#03101f] py-24 relative">
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-semibold text-white mb-12">
+Why Choose Us
+</h2>
+
+<div class="grid md:grid-cols-4 gap-10">
+
+<div>
+<h3 class="text-3xl font-bold text-white">40+</h3>
+<p class="text-gray-400 mt-2">Years of Experience</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-white">1000+</h3>
+<p class="text-gray-400 mt-2">Happy Customers</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-white">7</h3>
+<p class="text-gray-400 mt-2">Patents Approved</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-white">24/7</h3>
+<p class="text-gray-400 mt-2">Customer Support</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+
+<section class="py-16 bg-[#f3f4ef] overflow-hidden">
+
+<h2 class="text-center text-2xl font-semibold mb-12 text-black">
+Trusted by 
+</h2>
+
+<div class="logo-slider">
+
+<div class="logo-track">
+
+<img src="./assests/image copy 16.png">
+<img src="./assests/image copy 16.png">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="py-20 bg-[#0b1422]">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-3xl text-white mb-14">
+Our Packaging 
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<a href="#" class="group">
+
+<div class="overflow-hidden rounded-xl shadow-md">
+
+<img src="./assests/food.png"
+class="w-full h-52 object-cover transition duration-500 group-hover:scale-110">
+
+</div>
+
+<h3 class="mt-4 text-white text-lg">
+Food And Snacks 
+</h3>
+
+</a>
+
+
+<a href="#" class="group">
+
+<div class="overflow-hidden rounded-xl shadow-md">
+
+<img src="./assests/non-food.png"
+class="w-full h-52 object-cover transition duration-500 group-hover:scale-110">
+
+</div>
+
+<h3 class="mt-4 text-white text-lg">
+Non-Food 
+</h3>
+
+</a>
+
+
+<a href="#" class="group">
+
+<div class="overflow-hidden rounded-xl shadow-md">
+
+<img src="./assests/image copy 17.png"
+class="w-full h-52 object-cover transition duration-500 group-hover:scale-110">
+
+</div>
+
+<h3 class="mt-4 text-white text-lg">
+Industrial and Defence Packaging
+</h3>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- WHY US -->
+
+<!-- <section class="py-20 bg-gray-900">
+
+<div class="max-w-7xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-12">Why Choose Us</h2>
+
+<div class="grid md:grid-cols-4 gap-8">
+
+<div>
+<h3 class="text-3xl font-bold">40+</h3>
+<p class="text-gray-400">Years Experience</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold">1000+</h3>
+<p class="text-gray-400">Happy Customers</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold">7</h3>
+<p class="text-gray-400">Patent Approved</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold">24/7</h3>
+<p class="text-gray-400">Support</p>
+</div>
+
+</div>
+
+</div>
+</section> -->
+
+
+<!-- CTA
+
+<section class="py-20 text-center">
+
+<h2 class="text-4xl font-bold mb-6">
+Ready to Explore Our Solutions ?
+</h2>
+
+<p class="text-gray-400 mb-8">
+Let's create something amazing together.
+</p>
+
+<button class="px-8 py-4 bg-blue-600 rounded-lg hover:bg-blue-700">
+Contact Us
+</button>
+
+</section> -->
+<section class="relative h-[520px] overflow-hidden group">
+
+  <!-- Team Image -->
+  <img 
+    src="./assests/team.png"
+    class="absolute inset-0 w-full h-full object-cover transition duration-[5000ms] group-hover:scale-105"
+  >
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent"></div>
+
+  <!-- Text Content -->
+  <div class="relative text-center pt-10 px-6 text-white">
+
+    <h2 class="text-4xl font-semibold mb-4 animate-fadeUp">
+      Our Experts
+    </h2>
+
+    <p class="text-lg text-gray-200 max-w-2xl mx-auto animate-fadeUp delay-300">
+      Our dedicated team plays a major role in delivering reliable, modern and high-quality
+      packaging solutions that help brands create premium product experiences.
+    </p>
+
+  </div>
+
+</section>
+</section>
+
+
+<section class="py-24 bg-[#0f1b2e]">
+
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-3xl font-semibold text-white mb-3">
+What Our Customers says
+</h2>
+
+<p class="text-gray-400 mb-16">
+Every success story motivates us to set new standards in packaging
+</p>
+
+
+</div>
+
+<!-- Testimonials -->
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+<!-- Card 1 -->
+<div class="bg-white text-gray-800 rounded-xl p-6 shadow-lg max-w-sm mx-auto">
+
+<p class="text-gray-700 text-sm leading-relaxed mb-6">
+“We have used and rigorously tested many packaging solutions and
+found Moti Packaging products are among the best. Their service
+is excellent too.”
+</p>
+
+<div class="flex items-center gap-3">
+
+<img src="./assests/user1.png"
+class="w-10 h-10 rounded-full object-cover">
+
+<div>
+
+<p class="font-semibold text-sm">Dinesh</p>
+<p class="text-xs text-gray-500">Hero Motors</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 2 -->
+
+<div class="bg-white text-gray-800 rounded-xl p-6 shadow-lg max-w-sm mx-auto">
+
+<p class="text-gray-700 text-sm leading-relaxed mb-6">
+“We are 100% satisfied with the responsiveness to our needs,
+exceptional delivery time and the superior quality of products.”
+</p>
+
+<div class="flex items-center gap-3">
+
+<img src="./assests/user2.png"
+class="w-10 h-10 rounded-full object-cover">
+
+<div>
+
+<p class="font-semibold text-sm">Ravi Kumar</p>
+<p class="text-xs text-gray-500">Lapp India</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="bg-white text-gray-800 rounded-xl p-6 shadow-lg max-w-sm mx-auto">
+
+<p class="text-gray-700 text-sm leading-relaxed mb-6">
+“We are delighted with the time and effort the team
+put in understanding our requirements and helping us
+choose the best solutions.”
+</p>
+
+<div class="flex items-center gap-3">
+
+<img src="./assests/user3.png"
+class="w-10 h-10 rounded-full object-cover">
+
+<div>
+
+<p class="font-semibold text-sm">Mayank Shekhar</p>
+<p class="text-xs text-gray-500">Shekhar International</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- NEXT ACTION SECTION -->
+
+<section class="py-24 bg-gradient-to-b from-[#0b1422] to-[#0f1b2e]">
+
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-3xl text-white mb-16">
+What would you like to do next?
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="border border-white/20 rounded-xl p-10 hover:border-[#b3bd98] transition">
+
+<h3 class="text-lg text-white mb-3">
+Browse Our Products
+</h3>
+
+<p class="text-gray-400 mb-6">
+Explore our premium packaging solutions designed for modern brands.
+</p>
+
+<a href="#" class="text-[#b3bd98] font-medium">
+Explore Products →
+</a>
+
+</div>
+
+
+<div class="border border-white/20 rounded-xl p-10 hover:border-[#b3bd98] transition">
+
+<h3 class="text-lg text-white mb-3">
+Request a Call-Back
+</h3>
+
+<p class="text-gray-400 mb-6">
+Let our team help you choose the best packaging solutions for your product.
+</p>
+
+<a href="#" class="text-[#b3bd98] font-medium">
+Contact Us →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="bg-[#0b1422]/95 backdrop-blur-sm text-gray-300 pt-16 pb-8">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+<!-- COMPANY -->
+<div>
+
+<img src="./assests/logo.png" class="h-16 mb-4">
+
+<p class="text-sm leading-relaxed text-gray-400">
+Helping clients solve complex dimensional measurement challenges
+with a range of robust measuring systems.
+</p>
+
+</div>
+
+<!-- ABOUT -->
+<div>
+
+<h3 class="font-semibold text-lg mb-4 text-white">About</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li><a href="#" class="hover:text-white">Our Story</a></li>
+<li><a href="#" class="hover:text-white">Case Studies</a></li>
+<li><a href="#" class="hover:text-white">Connect With Us</a></li>
+<li><a href="#" class="hover:text-white">FAQs</a></li>
+<li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+<li><a href="#" class="hover:text-white">Terms and Conditions</a></li>
+<li><a href="#" class="hover:text-white">Sitemap</a></li>
+<li><a href="#" class="hover:text-white">Blogs</a></li>
+
+</ul>
+
+</div>
+
+<!-- PRODUCTS -->
+<div>
+
+<h3 class="font-semibold text-lg mb-4 text-white">In Demand Packaging</h3>
+
+<ul class="space-y-2 text-sm text-gray-400">
+
+<li>PLuglid Can</li>
+<li>Bending Can</li>
+<li>Easy open end can</li>
+<li>Crimping Packaging</li>
+<li>Peel off Packaging</li>
+
+</ul>
+
+</div>
+
+<!-- CONTACT -->
+<div>
+
+<h3 class="font-semibold text-lg mb-4 text-white">Contact Information</h3>
+
+<ul class="space-y-3 text-sm text-gray-400">
+
+<li>+91-9354539861 </li>
+<li>salesconbdin@motipackaging.org</li>
+<li>
+ India
+</li>
+
+</ul>
+
+<div class="mt-4 flex gap-4">
+
+<a href="https://www.facebook.com/MotiPackagingIndustriesPvtLTd" target="_blank" 
+class="hover:text-[#b3bd98] transition">
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+<path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.9h-2.33V22c4.78-.75 8.45-4.91 8.45-9.93z"/>
+
+</svg>
+
+</a>
+
+
+<a href="https://www.instagram.com/moti.packaging" target="_blank"
+class="hover:text-[#b3bd98] transition">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zm4.25 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm4.75-2.75a.75.75 0 1 1-.75.75.75.75 0 0 1 .75-.75z"/>
+
+</svg>
+
+</a>
+
+
+<!-- YouTube -->
+<a href="https://www.youtube.com/@Motipackaging" target="_blank"
+class="hover:text-[#b3bd98] transition">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+
+<path d="M23.5 6.2a2.9 2.9 0 0 0-2-2C19.7 3.7 12 3.7 12 3.7s-7.7 0-9.5.5a2.9 2.9 0 0 0-2 2A30.3 30.3 0 0 0 0 12a30.3 30.3 0 0 0 .5 5.8 2.9 2.9 0 0 0 2 2c1.8.5 9.5.5 9.5.5s7.7 0 9.5-.5a2.9 2.9 0 0 0 2-2A30.3 30.3 0 0 0 24 12a30.3 30.3 0 0 0-.5-5.8zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"/>
+
+</svg>
+
+</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- SERVING COUNTRIES -->
+
+<!-- <div class="max-w-7xl mx-auto px-6 mt-12 text-center text-sm text-gray-400">
+
+<span class="font-semibold text-white">Serving Countries :</span>
+
+<span class="mx-2">USA</span> |
+<span class="mx-2">Russia</span> |
+<span class="mx-2">Italy</span> |
+<span class="mx-2">Australia</span> |
+<span class="mx-2">Saudi Arabia</span>
+
+</div> -->
+
+<!-- DIVIDER -->
+<div class="max-w-7xl mx-auto mt-6 border-t border-gray-700"></div>
+
+<!-- COPYRIGHT -->
+
+<div class="text-center text-sm text-gray-500 mt-6">
+
+Copyright © 2026 Moti Packaging Industries Pvt Ltd. All Rights Reserved.
+
+</div>
+
+</footer>>
+
+</footer>
+</body>
+</html>
