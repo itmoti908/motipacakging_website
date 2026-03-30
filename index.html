@@ -110,6 +110,15 @@ color:#000;
 }
 
 
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 2.5s infinite ease-in-out;
+}
+
 </style>
 
 <script>
@@ -135,6 +144,16 @@ window.addEventListener("scroll", function () {
 });
 
 </script>
+
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/919354539861" target="_blank"
+   class="fixed bottom-6 right-6 z-50 animate-bounce-slow">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+       alt="WhatsApp"
+       class="w-14 h-14 drop-shadow-xl hover:scale-110 transition duration-300">
+</a>
 
 <body class="bg-gray-950 text-white font-sans">
 
@@ -166,13 +185,112 @@ window.addEventListener("scroll", function () {
       </div>
 
       <!-- NAV -->
-      <nav class="hidden md:flex gap-10 font-semibold text-[17px] text-[#1E3A8A]">
-        <a href="#">Products</a>
-        <a href="#">Our Story</a>
-        <a href="#">Markets</a>
-        <a href="#">Case Studies</a>
-        <a href="#">Contact Us</a>
-      </nav>
+    <!-- NAV -->
+<nav class="hidden md:flex gap-10 font-semibold text-[17px] text-[#1E3A8A]">
+
+ <!-- PRODUCTS DROPDOWN -->
+<div class="relative group">
+
+  <button class="flex items-center gap-1">
+    Products
+    <span class="text-xs">▼</span>
+  </button>
+
+  <!-- MEGA MENU -->
+  <div class="absolute left-0 top-full mt-3 w-[750px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+
+    <div class="grid grid-cols-3 gap-8 p-6 text-[#1E3A8A]">
+
+      <!-- FOOD PACKAGING -->
+      <div>
+        <h4 class="font-semibold text-black mb-3">Food Packaging</h4>
+
+        <!-- DIRECT -->
+        <p class="text-sm font-semibold mb-1">Direct Contact</p>
+        <ul class="space-y-1 text-sm mb-3">
+          <li><a href="#" class="hover:text-black">EOE</a></li>
+          <li><a href="#" class="hover:text-black">Plug Lid Can</a></li>
+          <li><a href="#" class="hover:text-black">Sprinkles</a></li>
+          <li><a href="#" class="hover:text-black">Crimping</a></li>
+        </ul>
+
+        <!-- INDIRECT -->
+        <p class="text-sm font-semibold mb-1">Indirect Contact</p>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="hover:text-black">Plug</a></li>
+          <li><a href="#" class="hover:text-black">Bending</a></li>
+        </ul>
+      </div>
+
+
+      <!-- NON-FOOD -->
+      <div>
+        <h4 class="font-semibold text-black mb-3">Non-Food Packaging</h4>
+
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-black">Plug</a></li>
+          <li><a href="#" class="hover:text-black">Bending</a></li>
+        </ul>
+      </div>
+
+
+      <!-- INDUSTRIAL -->
+      <div>
+        <h4 class="font-semibold text-black mb-3">Industrial</h4>
+
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-black">Plug Lid</a></li>
+          <li><a href="#" class="hover:text-black">Bending</a></li>
+          <li><a href="#" class="hover:text-black">Sports</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+  <a href="#">Our Story</a>
+
+  <!-- MARKETS DROPDOWN -->
+  <div class="relative group">
+
+    <button class="flex items-center gap-1">
+      Markets
+      <span class="text-xs">▼</span>
+    </button>
+
+    <!-- DROPDOWN -->
+    <div class="absolute top-full left-0 mt-3 w-72 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-50">
+
+      <div class="p-5">
+
+        <h4 class="text-sm font-semibold text-base mb-3">
+          Solutions Across Industries
+        </h4>
+
+        <ul class="space-y-2 text-[#1E3A8A]">
+
+          <li><a href="#" class="block hover:text-black">Food & Snacks</a></li>
+          <li><a href="#" class="block hover:text-black">Pet Care</a></li>
+          <li><a href="#" class="block hover:text-black">Liquors</a></li>
+          <li><a href="#" class="block hover:text-black">Cosmetics</a></li>
+          <li><a href="#" class="block hover:text-black">Industrial and Defence</a></li>
+          <li><a href="#" class="block hover:text-black">Health and wellness</a></li>
+         
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <a href="#">Case Studies</a>
+  <a href="#">Contact Us</a>
+
+</nav>
 
     </div>
   </header>
